@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="veiwpoint" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipes</title>
+    <body>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: mintcream;
+            }
+
+            h1 {
+                text-align: center;
+                /* border:3px solid black;*/
+                border-radius: 5px;
+                margin: 10px;
+                background-color: steelblue;
+                text-transform: capitalize;
+                color: white;
+                display: grid;
+                margin: 4px;
+            }
+
+            h2 {
+                font-family: cursive;
+                padding-left: 25%;
+                font-style: italic;
+                text-transform: uppercase;
+            }
+
+            h4 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .items {
+                /* border: 2px solid black;*/
+                padding: 1%;
+                background-color: cornflowerblue;
+                color: white;
+                font-family: monospace;
+                width: 11.5%;
+                text-align: center;
+                border-radius: 5px;
+                display: grid;
+                float: left;
+                margin: 4px;
+            }
+
+            .img {
+                width: 97%;
+                padding: 1%;
+            }
+
+            .food {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                padding: 40px 30px;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+            }
+
+            .foods img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                cursor: pointer;
+                transition: 00.2s ease;
+            }
+
+                .foods img:hover {
+                    transform: scale(1.04);
+                }
+
+            .foods h4 {
+                padding: 5px;
+                text-align: center;
+            }
+
+            .foods button {
+                padding: 5px 30px;
+                border: none;
+                outline: none;
+                background-color: rgb(2, 112, 2);
+                color: honeydew;
+                cursor: pointer;
+                border-radius: 4px;
+                font-size: 20px;
+                display: block;
+                margin: 0 auto;
+                transition: 0.2s;
+                text-transform: capitalize;
+            }
+
+                .foods button:hover {
+                    transform: scale(1.02);
+                }
+
+            .items:hover {
+                background-color: yellowgreen;
+                cursor: pointer;
+                color: maroon;
+                transition: 0.2s ease-in;
+            }
+
+            .footer {
+                background-color: cornflowerblue;
+                color: white;
+                align-items: center;
+                padding: 15px;
+                font-size: 20px;
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                border-radius: 10px;
+            }
+
+            @media screen and (max-width:1000px) {
+                .food {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                .food {
+                    grid-template-columns: repeat(1,1fr);
+                }
+            }
+        </style>
+        <h1>pichi ekkistha foods</h1>
+        <div class="items">HOME</div>
+        <div class="items">RECIPES</div>
+        <div class="items">ABOUT US</div>
+        <div class="items">CONTACT US</div>
+        <div class="items" id="login">SINGUP</div>
+        <div class="items" id="login">LOGIN</div>
+        <div class="items" style="display:;">MENU</div>
+        <div class="items">FEEDBACK</div>
+        <img src="https://b.zmtcdn.com/data/pictures/6/18472046/6a8f64a52da2cc2e4ba8572b13b61fba.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="This for error image" class="img">
+        <form class="form">
+        </form>
+        <h2>EAT WHAT YOUR TUMMY LIKES</h2>
+        <section class="food">
+            <div class="foods">
+                <img src="https://www.cookwithmanali.com/wp-content/uploads/2021/08/Schezwan-Paneer-Momos-768x1164.jpg" width="40%">
+                <h4 style="">MOMOS</h4>
+                <button>order</button>
+            </div>
+            <div class="foods">
+                <img src="https://b.zmtcdn.com/data/dish_photos/b3d/e2055b8ded70ee4e22e8e7959c9cdb3d.jpg" alt="this is error code" width="80%">
+                <h4>CHICKEN</h4>
+                <button>order</button>
+            </div>
+            <div class="foods">
+                <img src="https://b.zmtcdn.com/data/dish_photos/2e5/c9674fde9d502f8c6e97ec10aaaa92e5.jpg" alt="this is error code" width="80%">
+                <h4>PIZZA</h4>
+                <button>order</button>
+            </div>
+            <div class="foods">
+                <img src="https://b.zmtcdn.com/data/pictures/5/19751765/fddfe1d514e23a47261fe036429e027b_o2_featured_v2.jpg?output-format=webp" alt="this is error code" width="85%">
+                <h4>BURGER</h4>
+                <button>order</button>
+            </div>
+            <div class="foods">
+                <img src="https://punampaul.com/wp-content/uploads/2019/04/Mughlai-Chicken-Biryani-500x360.jpg" alt="this is error code" width="50%">
+                <h4>CHICKEN BIRYANI</h4>
+                <button>order</button>
+            </div>
+            <div class="foods">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/7/19775817/581e0ed5317a9150aa66e00de385610e.jpg?fit=around|300:273&crop=300:273;*,*" alt="this is error code" width="50%">
+                <h4>GRILLED CHICKEN</h4>
+                <button>order</button>
+            </div>
+            <div class="foods">
+                <img src="https://static.toiimg.com/thumb/53251884.cms?imgsize=530171&width=800&height=800" alt="this is error code" width="50%">
+                <h4>PANEER BUTTER MASALA</h4>
+                <button>order</button>
+            </div>
+            <div class="foods">
+                <img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2019/7/3/w900X450/A-midsummer.jpg?w=640&dpr=1.3">
+                <h4>ICE CREAM</h4>
+                <button>order</button>
+            </div>
+        </section>
+        <div>
+            <footer class="footer">By VINAY</footer>
+        </div>
+    </body>
+</head>
+</html>
